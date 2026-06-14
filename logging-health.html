@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logging Health Data — VEGA Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.93rem; }
+    th { background: var(--navy); color: var(--white); text-align: left; padding: 0.6rem 0.9rem; }
+    td { padding: 0.6rem 0.9rem; border-bottom: 1px solid #dce6f0; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f2f7fb; }
+    .doc-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce6f0;
+      font-size: 0.9rem;
+    }
+    .doc-nav a { color: var(--teal); text-decoration: none; }
+    .doc-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="index.html">Docs</a></li>
+    <li><a href="../support.html">Support</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Documentation</p>
+  <h1>Logging health data</h1>
+  <p>What you can record, and why consistent logging makes the AI insights more useful.</p>
+</div>
+
+<main>
+
+  <h2>Adding a log entry</h2>
+  <p>Open a pet's profile and tap <strong>Add log</strong>. Choose the log type, fill in the relevant fields, add any free-text notes, and tap <strong>Save</strong>. The entry is stored instantly on your device.</p>
+
+  <h2>Log types</h2>
+
+  <table>
+    <thead>
+      <tr><th>Type</th><th>What to record</th><th>Key fields</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Weight</td><td>Your pet's body weight</td><td>Weight in kg</td></tr>
+      <tr><td>Appetite</td><td>How much and how eagerly they ate</td><td>Rating (good / reduced / refused), notes</td></tr>
+      <tr><td>Medication</td><td>A dose given</td><td>Drug name, dose in mg, route (oral / topical / injection)</td></tr>
+      <tr><td>Mood</td><td>General energy and demeanour</td><td>Rating (normal / low / lethargic / hyperactive), notes</td></tr>
+      <tr><td>Symptoms</td><td>Any observed symptom</td><td>Description, severity, duration</td></tr>
+      <tr><td>Vet visit</td><td>A consultation or procedure</td><td>Clinic name, vet name, reason, outcome, next appointment</td></tr>
+      <tr><td>Vaccination</td><td>A vaccine administered</td><td>Vaccine name, batch number, next due date</td></tr>
+      <tr><td>Custom</td><td>Anything else</td><td>Label + free text — useful for breed-specific observations</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Editing and deleting logs</h2>
+  <p>Tap any log entry in the Logs list to open it. Use the edit icon (✏️) to correct a mistake, or the delete icon (🗑) to remove it. Deleted entries cannot be recovered.</p>
+
+  <h2>Viewing history</h2>
+  <p>The Logs screen shows all entries in reverse chronological order. Use the filter button to narrow down by log type, or scroll the weight entries to see a trend over time.</p>
+
+  <h2>Tips for useful logging</h2>
+  <ul>
+    <li><strong>Weigh regularly.</strong> Even a weekly weight entry builds a trend the AI can work with. Weight loss is one of the earliest detectable signals for conditions like CKD.</li>
+    <li><strong>Log appetite every day if you can.</strong> Appetite changes are often the first thing owners notice before a diagnosis.</li>
+    <li><strong>Record medications as you give them.</strong> The Logs screen becomes a reliable medication history for your vet.</li>
+    <li><strong>Use the notes field freely.</strong> Observations that don't fit a category still matter — write them in a Custom log or the notes field of any entry.</li>
+  </ul>
+
+  <div class="callout warning">
+    Logging health data is not a substitute for veterinary care. If you notice something concerning, contact your vet — don't wait to see what the app says.
+  </div>
+
+  <div class="doc-nav">
+    <a href="getting-started.html">← Getting started</a>
+    <a href="reminders.html">Next: Reminders →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="../privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="../terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="../support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

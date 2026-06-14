@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started — VEGA Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .steps { counter-reset: step; margin: 1.5rem 0; }
+    .step {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+      align-items: flex-start;
+    }
+    .step-num {
+      counter-increment: step;
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.9rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .step-num::before { content: counter(step); }
+    .step-body h3 { margin-top: 0; }
+    .doc-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce6f0;
+      font-size: 0.9rem;
+    }
+    .doc-nav a { color: var(--teal); text-decoration: none; }
+    .doc-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="index.html">Docs</a></li>
+    <li><a href="../support.html">Support</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Documentation</p>
+  <h1>Getting started</h1>
+  <p>From install to your first health log in a few minutes.</p>
+</div>
+
+<main>
+
+  <h2>Installation</h2>
+  <p>Download VEGA from the <strong>Google Play Store</strong> (Android) or the <strong>Apple App Store</strong> (iOS). Search for "VEGA Veterinary Guardian" or use the links on our home page.</p>
+  <p>VEGA requires Android 8.0+ or iOS 14+.</p>
+
+  <h2>First launch</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>Choose how you'd like to use VEGA</h3>
+        <p>You can use VEGA without an account — all data stays on your device. If you'd like to back up your data or sync across devices, tap <strong>Create account</strong> and enter your email address.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>Add your first pet</h3>
+        <p>Tap the <strong>+</strong> button on the Pets screen. Enter your pet's name, species, breed (optional), date of birth, sex, and whether they are neutered. Add a photo if you like. Tap <strong>Save</strong>.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>Decide on cloud sync (optional)</h3>
+        <p>After adding your first pet, VEGA will ask whether you want to enable cloud sync. This backs up your data to our EU servers and lets you access it across devices. You can say no and change your mind later in Settings.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num"></div>
+      <div class="step-body">
+        <h3>Start logging</h3>
+        <p>Tap your pet's name to open their profile, then tap <strong>Add log</strong> to record your first health entry. See <a href="logging-health.html">Logging health data</a> for what you can record.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Finding your way around</h2>
+
+  <h3>Pets screen</h3>
+  <p>Your home screen lists all your pets. Tap a pet to open their profile. Tap <strong>+</strong> to add a new pet.</p>
+
+  <h3>Pet profile</h3>
+  <p>Shows your pet's details, recent log entries, and quick-access buttons for logging and reminders. Use the three-dot menu (⋮) to edit the profile or delete the pet.</p>
+
+  <h3>Logs</h3>
+  <p>A full chronological history of health entries for a pet. Scroll to review past logs or use the filter to focus on a specific type (e.g. weight only).</p>
+
+  <h3>Schedules</h3>
+  <p>All feeding and medication reminders for a pet. Tap a schedule to edit it, or use the toggle to pause it without deleting it.</p>
+
+  <h3>Insights</h3>
+  <p>AI-generated pattern summaries (requires cloud sync + AI training consent). See <a href="ai-insights.html">AI insights</a> for details.</p>
+
+  <h3>Settings</h3>
+  <p>Manage your account, consent choices, notification preferences, and app behaviour.</p>
+
+  <div class="callout">
+    <strong>Tip:</strong> VEGA works fully offline. Reminders will still fire, and you can keep logging even without a connection. Any unsynced entries will upload automatically the next time you're online (if sync is enabled).
+  </div>
+
+  <div class="doc-nav">
+    <span></span>
+    <a href="logging-health.html">Next: Logging health data →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="../privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="../terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="../support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

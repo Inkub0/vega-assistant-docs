@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reminders — VEGA Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .doc-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce6f0;
+      font-size: 0.9rem;
+    }
+    .doc-nav a { color: var(--teal); text-decoration: none; }
+    .doc-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="index.html">Docs</a></li>
+    <li><a href="../support.html">Support</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Documentation</p>
+  <h1>Reminders</h1>
+  <p>Set up feeding and medication schedules that work even when you're offline.</p>
+</div>
+
+<main>
+
+  <h2>How reminders work</h2>
+  <p>VEGA schedules reminders directly on your device using the operating system's notification system. They fire at the exact time you set, without needing an internet connection or our servers to be available.</p>
+
+  <h2>Creating a reminder</h2>
+  <ol>
+    <li>Open a pet's profile and tap <strong>Schedules</strong>.</li>
+    <li>Tap <strong>Add schedule</strong>.</li>
+    <li>Give the schedule a title (e.g. "Morning insulin", "Dinner time").</li>
+    <li>Optionally add a description for more detail.</li>
+    <li>Set the recurrence — daily at a fixed time is the most common choice. More advanced schedules use a cron-style expression for full flexibility.</li>
+    <li>Tap <strong>Save</strong>. The reminder is active immediately.</li>
+  </ol>
+
+  <h2>Editing and pausing reminders</h2>
+  <p>Tap any schedule in the Schedules list to open it. You can edit any field, or use the <strong>Active</strong> toggle to pause a reminder without deleting it. This is useful for medications that are only given in a specific course.</p>
+
+  <h2>Deleting a reminder</h2>
+  <p>Open the schedule and tap the delete icon. The reminder will stop firing immediately. This cannot be undone — create a new one if you need it again.</p>
+
+  <h2>Notification permissions</h2>
+
+  <h3>Android</h3>
+  <p>VEGA will ask for notification permission on first use. If you declined and want to re-enable it, go to your device <strong>Settings → Apps → VEGA → Notifications</strong> and turn them on.</p>
+  <p>For reliable alarm delivery on Android 12+, VEGA also requires the <em>Schedule exact alarms</em> permission. If your reminders seem delayed or don't fire, check <strong>Settings → Apps → VEGA → Alarms &amp; reminders</strong> and ensure this is allowed.</p>
+  <p>If your device has aggressive battery optimisation, VEGA may be prevented from waking up for reminders. Go to <strong>Settings → Apps → VEGA → Battery → Unrestricted</strong> to fix this.</p>
+
+  <h3>iOS</h3>
+  <p>VEGA will ask for notification permission on first launch. If you declined, go to <strong>Settings → Notifications → VEGA</strong> and enable Allow Notifications. Make sure <em>Time Sensitive</em> notifications are enabled for the most reliable delivery.</p>
+
+  <div class="callout">
+    <strong>Reminder:</strong> If you uninstall and reinstall VEGA, all scheduled reminders need to be recreated. They are stored on-device and are not restored from cloud sync.
+  </div>
+
+  <div class="doc-nav">
+    <a href="logging-health.html">← Logging health data</a>
+    <a href="ai-insights.html">Next: AI insights →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="../privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="../terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="../support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consent &amp; Your Data — VEGA Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .consent-card {
+      border: 1px solid #dce6f0;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      background: #fff;
+    }
+    .consent-card h3 { margin-top: 0; color: var(--navy); }
+    .consent-card .status {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 99px;
+      background: #e8f7f6;
+      color: #1a8a82;
+      margin-bottom: 0.75rem;
+    }
+    .doc-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce6f0;
+      font-size: 0.9rem;
+    }
+    .doc-nav a { color: var(--teal); text-decoration: none; }
+    .doc-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="index.html">Docs</a></li>
+    <li><a href="../support.html">Support</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Documentation</p>
+  <h1>Consent &amp; your data</h1>
+  <p>What we collect, what you control, and how to manage or delete your data.</p>
+</div>
+
+<main>
+
+  <h2>Your two consent choices</h2>
+  <p>VEGA has two independent opt-in features. Neither is required to use the app. Both can be revoked at any time.</p>
+
+  <div class="consent-card">
+    <span class="status">Optional</span>
+    <h3>Cloud sync</h3>
+    <p>Backs up your pet data and syncs it across your devices. Your data is stored on our own servers in the EU (Germany). Your email address is used for authentication only.</p>
+    <p><strong>To enable:</strong> Settings → Data &amp; Privacy → Cloud sync → On<br/>
+    <strong>To revoke:</strong> Settings → Data &amp; Privacy → Cloud sync → Off<br/>
+    Revoking triggers deletion of your data from our servers within 30 days.</p>
+  </div>
+
+  <div class="consent-card">
+    <span class="status">Optional — requires cloud sync</span>
+    <h3>AI training</h3>
+    <p>Contributes fully anonymised health log data to improve VEGA's disease detection models. No name, no account link, no pet name — only species and log data. This is presented separately from cloud sync and is never pre-ticked.</p>
+    <p><strong>To enable:</strong> Settings → Data &amp; Privacy → AI training → On<br/>
+    <strong>To revoke:</strong> Settings → Data &amp; Privacy → AI training → Off<br/>
+    Revoking removes your anonymised data from our training pipeline within 30 days.</p>
+  </div>
+
+  <h2>Exporting your data</h2>
+  <p>Go to <strong>Settings → Data &amp; Privacy → Export my data</strong>. VEGA will generate a JSON file containing all your pet profiles and health logs. You can save this to your device or share it.</p>
+
+  <h2>Deleting your data</h2>
+
+  <h3>Delete a single log entry</h3>
+  <p>Tap the entry in the Logs list, then tap the delete icon. The entry is removed from your device immediately. If cloud sync is on, it is removed from our servers within 24 hours.</p>
+
+  <h3>Delete a pet</h3>
+  <p>Open the pet's profile, tap the three-dot menu (⋮), and select <strong>Delete pet</strong>. Confirm in the prompt. This deletes the pet profile, all their health logs, and all their schedules — from your device immediately and from our servers within 24 hours.</p>
+
+  <h3>Delete your account</h3>
+  <p>Go to <strong>Settings → Account → Delete account</strong> and confirm. This permanently deletes your account and all associated data from our servers within 30 days. On-device data is removed when you uninstall the app.</p>
+  <p>If you need help deleting your account, email <a href="mailto:privacy@vega-app.example">privacy@vega-app.example</a> — we are required to process your request under GDPR.</p>
+
+  <h2>Your GDPR rights</h2>
+  <p>If you are in the EEA or UK, you have the right to access, correct, erase, or port your data, and to object to or restrict its processing. Contact us at <a href="mailto:privacy@vega-app.example">privacy@vega-app.example</a> to exercise any of these rights. Full details are in our <a href="../privacy.html">Privacy Policy</a>.</p>
+
+  <div class="doc-nav">
+    <a href="ai-insights.html">← AI insights</a>
+    <span></span>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="../privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="../terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="../support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

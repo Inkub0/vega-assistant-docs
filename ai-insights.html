@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Insights — VEGA Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .doc-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce6f0;
+      font-size: 0.9rem;
+    }
+    .doc-nav a { color: var(--teal); text-decoration: none; }
+    .doc-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="index.html">Docs</a></li>
+    <li><a href="../support.html">Support</a></li>
+    <li><a href="../privacy.html">Privacy</a></li>
+    <li><a href="../terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Documentation</p>
+  <h1>AI insights</h1>
+  <p>How VEGA uses your pet's logged history to surface patterns worth discussing with your vet.</p>
+</div>
+
+<main>
+
+  <div class="callout warning">
+    <strong>AI insights are not diagnoses.</strong> They are pattern suggestions based on logged data, intended to prompt a conversation with a qualified veterinarian. Never use them to self-diagnose or delay professional care.
+  </div>
+
+  <h2>What AI insights do</h2>
+  <p>VEGA's AI service analyses your pet's health log history to detect statistical patterns associated with common conditions. For cats, this currently includes early indicators of Chronic Kidney Disease (CKD) — such as sustained weight loss combined with reduced appetite over several weeks.</p>
+  <p>When a pattern is detected, VEGA shows a finding in the <strong>Insights</strong> tab with:</p>
+  <ul>
+    <li>The condition flagged and a confidence level.</li>
+    <li>The specific data points that triggered the finding (e.g. "weight loss trend over 6 weeks", "appetite rated reduced on 12 of the last 20 logs").</li>
+    <li>A plain-language recommendation — typically to schedule a vet appointment.</li>
+  </ul>
+
+  <h2>What AI insights don't do</h2>
+  <ul>
+    <li>They do not diagnose your pet.</li>
+    <li>They are not a substitute for a physical examination or blood tests.</li>
+    <li>A finding does not mean your pet definitely has the flagged condition — it means the logged data resembles patterns associated with it.</li>
+    <li>A lack of findings does not mean your pet is healthy. VEGA only detects patterns it has been trained to recognise.</li>
+  </ul>
+
+  <h2>How to enable AI insights</h2>
+  <p>AI insights require two things:</p>
+  <ol>
+    <li><strong>Cloud sync enabled.</strong> Your logs need to reach our servers so the AI service can analyse them. Enable this in <strong>Settings → Data &amp; Privacy → Cloud sync</strong>.</li>
+    <li><strong>AI training consent granted.</strong> Once sync is on, VEGA will ask separately whether you'd like to contribute anonymised data to improve the models. This is independent of sync — you can say no and still receive insights based on your own data once the feature supports this configuration.</li>
+  </ol>
+  <p>Both can be revoked at any time from <strong>Settings → Data &amp; Privacy</strong>.</p>
+
+  <h2>Your data and the AI service</h2>
+  <p>When your logs are sent for analysis, the AI service receives only:</p>
+  <ul>
+    <li>Your pet's species.</li>
+    <li>The log entries (type, timestamp, values).</li>
+    <li>A random internal identifier — never your name, your pet's name, or your email address.</li>
+  </ul>
+  <p>No personally identifiable information ever reaches the AI service. See our <a href="../privacy.html">Privacy Policy</a> for the full picture.</p>
+
+  <h2>Why consistent logging matters</h2>
+  <p>The AI service works better with more data points. A single weight entry tells it very little. Weekly weight entries over two months give it a trend to work with. The more consistently you log, the more meaningful any findings will be.</p>
+
+  <div class="doc-nav">
+    <a href="reminders.html">← Reminders</a>
+    <a href="consent-and-data.html">Next: Consent &amp; your data →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="../privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="../terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="../support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEGA — Veterinary Guardian Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .landing-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 6rem 2rem 5rem;
+      text-align: center;
+    }
+    .landing-hero .paw { font-size: 3rem; margin-bottom: 1rem; }
+    .landing-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .landing-hero h1 span { color: var(--teal); }
+    .landing-hero p {
+      font-size: 1.1rem;
+      color: #aabdd0;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin: 0.25rem;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.85; text-decoration: none; }
+    .btn.outline {
+      background: transparent;
+      color: var(--teal);
+      border: 2px solid var(--teal);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .feature {
+      background: #fff;
+      border: 1px solid #dce6f0;
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+    .feature .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .feature h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .feature p { font-size: 0.9rem; color: var(--grey); margin: 0; }
+    .disclaimer {
+      background: #fff6e8;
+      border-left: 4px solid var(--amber);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="docs/getting-started.html">Docs</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="landing-hero">
+  <div class="paw">🐾</div>
+  <h1>Care smarter.<br/><span>Live longer together.</span></h1>
+  <p>VEGA helps you track your pet's health, set feeding and medication reminders, and spot patterns that matter — all from your phone.</p>
+  <a href="docs/getting-started.html" class="btn">Get started</a>
+  <a href="support.html" class="btn outline">Contact support</a>
+</div>
+
+<main>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">📋</div>
+      <h3>Daily health logging</h3>
+      <p>Record weight, appetite, mood, medication, and more — all in one place, with no internet required.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">⏰</div>
+      <h3>Smart reminders</h3>
+      <p>Schedule feeding and medication alerts that fire on-device, even when you're offline.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔬</div>
+      <h3>AI-assisted insights</h3>
+      <p>Opt-in pattern recognition surfaces early warning signs — like CKD risk in cats — so you can act before it's urgent.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Privacy first</h3>
+      <p>Your data lives on your device. Cloud sync and AI training are opt-in, independently revocable, and GDPR-compliant.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📡</div>
+      <h3>Offline first</h3>
+      <p>Core features work without a connection. Cloud sync is additive — never a dependency.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🐕</div>
+      <h3>Multi-species ready</h3>
+      <p>Launched for cats, built for any species. Dogs and more are on the roadmap.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>VEGA is not a diagnostic tool.</strong> AI-generated insights are suggestions to prompt a conversation with your vet — they are not medical diagnoses. Always consult a qualified veterinarian for health concerns.
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>

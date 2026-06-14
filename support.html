@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — VEGA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq { margin-top: 0.5rem; }
+    .faq details {
+      border: 1px solid #dce6f0;
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+    }
+    .faq summary {
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.97rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+    .faq summary::after { content: '+'; color: var(--teal); font-size: 1.2rem; }
+    .faq details[open] summary::after { content: '−'; }
+    .faq details[open] summary { border-bottom: 1px solid #dce6f0; }
+    .faq .answer { padding: 1rem 1.25rem; font-size: 0.95rem; background: #fff; }
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .contact-box h2 {
+      color: var(--teal);
+      border: none;
+      margin-top: 0;
+      display: block;
+    }
+    .contact-box p { color: #aabdd0; margin-bottom: 1.25rem; }
+    .contact-box a.btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 700;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
+    .contact-box a.btn:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">⭐ VEGA</a>
+  <ul>
+    <li><a href="docs/getting-started.html">Docs</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="eyebrow">Help</p>
+  <h1>Support</h1>
+  <p>Answers to common questions, and a direct line to us if you need more help.</p>
+</div>
+
+<main>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+
+    <details>
+      <summary>Does VEGA work without an internet connection?</summary>
+      <div class="answer">
+        <p>Yes. All core features — logging health data, viewing your pet's history, and receiving scheduled reminders — work entirely offline. Cloud sync is optional and additive; the app does not depend on it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <div class="answer">
+        <p>By default, all your data is stored locally on your device in an encrypted database. If you choose to enable cloud sync, your data is backed up to our own servers hosted in the EU (Germany, via Hetzner). We do not use third-party cloud platforms like AWS or Google Cloud. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is the AI insights feature and how do I opt in?</summary>
+      <div class="answer">
+        <p>The AI insights feature analyses your pet's health logs to surface potential patterns — for example, early indicators of Chronic Kidney Disease in cats. It requires cloud sync to be enabled first, then you'll be asked separately whether you'd like to contribute anonymised data to improve the models.</p>
+        <p>Both consents are optional and independently revocable at any time in <strong>Settings → Data &amp; Privacy</strong>.</p>
+        <p><strong>AI insights are not diagnoses.</strong> They are suggestions to prompt a conversation with your vet.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I delete my account and data?</summary>
+      <div class="answer">
+        <p>Go to <strong>Settings → Account → Delete account</strong>. This will permanently delete your account and trigger deletion of all your data from our servers within 30 days. On-device data is removed immediately when you uninstall the app.</p>
+        <p>If you need help with this, email us at <a href="mailto:privacy@vega-app.example">privacy@vega-app.example</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I revoke my cloud sync or AI training consent?</summary>
+      <div class="answer">
+        <p>Go to <strong>Settings → Data &amp; Privacy</strong>. Both consent toggles are there and can be switched off independently at any time. Revoking cloud sync consent triggers server-side deletion of your data. Revoking AI training consent removes your anonymised data from our training pipeline.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My reminders aren't firing. What should I check?</summary>
+      <div class="answer">
+        <p>Reminders are scheduled on-device and do not require internet. Check the following:</p>
+        <ul>
+          <li>On Android: ensure VEGA has permission to send notifications and is not battery-optimised to the point of blocking background processes (<strong>Settings → Apps → VEGA → Battery → Unrestricted</strong>).</li>
+          <li>On iOS: ensure notifications are enabled for VEGA in <strong>Settings → Notifications → VEGA</strong>.</li>
+          <li>Check that the schedule is marked as active in <strong>Schedules</strong> within the app.</li>
+        </ul>
+        <p>If the problem persists, please <a href="mailto:support@vega-app.example">contact us</a> with your device model and OS version.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I use VEGA for dogs or other pets?</summary>
+      <div class="answer">
+        <p>VEGA launches with cats as the primary species, but the app is built to support multiple species. Dog support and further species are on the roadmap. When creating a pet profile, select the species that best matches your pet.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I've lost access to my account. How do I recover it?</summary>
+      <div class="answer">
+        <p>Use the <strong>Forgot password</strong> link on the login screen to receive a password reset email. If you no longer have access to your registered email address, contact us at <a href="mailto:support@vega-app.example">support@vega-app.example</a> and we will help verify your identity.</p>
+      </div>
+    </details>
+
+  </div>
+
+  <h2>Documentation</h2>
+  <p>For step-by-step guides on using VEGA, visit the <a href="docs/getting-started.html">documentation section</a>.</p>
+
+  <div class="contact-box">
+    <h2>Still need help?</h2>
+    <p>Send us an email and we'll get back to you as soon as we can — usually within 1–2 business days.</p>
+    <a href="mailto:support@vega-app.example" class="btn">Email support</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 VEGA — Veterinary Guardian Assistant &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="support.html">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>
